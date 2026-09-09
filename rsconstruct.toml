@@ -1,7 +1,11 @@
 # rsconstruct build configuration for this repository.
 
+[build]
+# src_dirs entries name directories; "." (the whole tree) is a config error
+reject_dot_src_dirs = true
+
 [processor.taplo]
-src_dirs = ["."]
+src_files = [".rumdl.toml", "rsconstruct.toml"]
 
 # lint the GitHub Actions workflow files with actionlint
 [processor.actionlint]
