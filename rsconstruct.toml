@@ -38,3 +38,8 @@ src_files = ["README.md"]
 
 [processor.checker.ishellcheck]
 src_dirs = ["solutions_jb/chapter1"]
+
+# every lint suppression names a rule and says why (see the fleet's CLAUDE.md)
+[processor.checker.suppressions]
+src_dirs = [".github", "config", "solutions_jb/chapter1"]
+src_files = [".yamllint.yaml", "README.md"]
